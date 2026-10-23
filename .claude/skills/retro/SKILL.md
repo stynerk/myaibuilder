@@ -1,6 +1,7 @@
 ---
 name: retro
 description: Run a sprint or launch retrospective with templates/retro.md, judge hypotheses against metrics, measure TTFU, and turn learnings into concrete Builder OS changes (playbook, skills, agents, templates, CLAUDE.md). Use at the end of a sprint, after a launch, or when the user says 회고 or /retro.
+argument-hint: "<service-name> [sprint-NN]"
 ---
 
 # /retro
@@ -14,7 +15,7 @@ description: Run a sprint or launch retrospective with templates/retro.md, judge
    - Sprint 문서
    - 기간 내 머지된 PR과 닫힌 Issue (`git log`, GitHub)
    - PRD 성공 지표의 실제 값 (Owner에게 묻는다)
-2. **TTFU 계산**: 아이디어 Issue 생성일부터 첫 실사용자 날짜까지.
+2. **TTFU 계산**: `os/vision.md` 정의대로 Idea Issue(Backlog) 등록일부터 첫 실사용자 날짜까지.
 3. **가설 판정**: PRD의 H1, H2…를 검증 / 기각 / 보류로 판정하고 근거를 쓴다.
 4. **Keep / Problem / Try** 작성.
 5. **Builder OS 개선 도출**
@@ -27,6 +28,6 @@ description: Run a sprint or launch retrospective with templates/retro.md, judge
 
 ## 출력
 
-- `services/<name>/sprints/retro-NN.md`
+- `services/<name>/sprints/retro-NN.md` (`templates/retro.md` 기준)
 - Builder OS 변경 diff (PR)
 - 다음 Sprint 추천 목표 1개

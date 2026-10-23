@@ -4,7 +4,7 @@
 |---|---|
 | Date | YYYY-MM-DD |
 | Scope | Sprint NN / Service 출시 |
-| TTFU | N일 (Backlog 등록일 → 첫 실사용자) |
+| TTFU | N일 (Idea Issue 등록일 → 첫 실사용자) |
 
 ## 1. 결과 vs 목표
 

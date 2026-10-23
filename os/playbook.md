@@ -35,6 +35,25 @@ Capture → Evaluate → Define → Build → Verify → Launch → Measure → 
 ### 1. Capture
 
 아이디어를 잃지 않고 즉시 기록한다. GitHub Issue(`idea` 템플릿)로 등록한다.
+서비스는 삭제하지 않는다. 중단하면 `archived` 라벨로 옮긴다.
+
+| Priority | 의미 |
+|---|---|
+| P0 | 즉시 개발 |
+| P1 | 이번 Sprint |
+| P2 | 다음 Sprint |
+| P3 | 아이디어 보관 |
+
+| Status | 의미 |
+|---|---|
+| Idea | 아이디어만 존재 |
+| Evaluating | 평가 중 (`/new-service`) |
+| Ready | PRD Approved, 개발 대기 |
+| In Progress | 개발 중 |
+| Released | 출시 완료 |
+| Archived | 보류 또는 종료 |
+
+Priority와 Status는 Issue 라벨 또는 Project 필드로 관리한다. 개발 중에도 Priority는 바뀔 수 있다.
 
 ### 2. Evaluate
 
@@ -55,7 +74,7 @@ Capture → Evaluate → Define → Build → Verify → Launch → Measure → 
 
 [PRD 템플릿](../templates/prd.md)으로 작성한다. 순서가 중요하다.
 
-1. 문제와 사용자 (Why / Who)
+1. 문제와 사용자 (Why / Who): 먼저 리서치한다. 경쟁·대체 서비스, 사용자의 현재 우회 방법, 차별화 포인트를 확인하고 "우리 컨텍스트에 맞는가?"를 따진다.
 2. 핵심 가설과 리스크
 3. 성공 지표 (먼저 정한다)
 4. 지표를 검증할 수 있는 최소 MVP 범위 (지표에서 역산한다)
@@ -77,7 +96,7 @@ Production 배포, Analytics 연결, Error Tracking을 확인한다.
 
 ### 7. Measure
 
-PRD의 성공 지표와 비교해 가설을 판정한다. 핵심 지표: Activation, Retention, Conversion, Error Rate.
+PRD의 성공 지표와 비교해 가설을 판정한다. 핵심 지표: Traffic, Activation, Retention, Conversion, Revenue, Error Rate 중 PRD에서 정한 것.
 
 ### 8. Retro
 
@@ -91,7 +110,7 @@ PRD의 성공 지표와 비교해 가설을 판정한다. 핵심 지표: Activat
 | Two Week Rule | MVP가 2주를 넘기면 범위를 줄인다 |
 | Workflow Rule | 같은 작업을 두 번 하면 skill로 만든다 |
 | Stop Rule | 사용자 검증 없이 기능을 계속 추가하지 않는다 |
-| Meta Rule | Builder OS 작업이 서비스 작업보다 길어지면 멈추고 서비스로 돌아간다 |
+| Meta Rule | Builder OS 작업이 서비스 작업보다 길어지면 멈추고 Owner에게 알린 뒤 서비스로 돌아간다 |
 | Decision Rule | 구조·Workflow·agent 역할·MVP 범위 변경은 ADR로 기록한다 |
 
 ## Definition of Done

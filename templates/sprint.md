@@ -41,4 +41,4 @@
 - 결과 요약:
 - 다음 Sprint 우선순위:
 
-회고는 `/retro`로 작성한다 → [templates/retro.md](retro.md)
+회고는 `/retro`로 작성한다 → [templates/retro.md](/templates/retro.md)

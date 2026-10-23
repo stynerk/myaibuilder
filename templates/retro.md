@@ -35,4 +35,4 @@
 
 ## 5. Decisions
 
-이번 기간에 생성하거나 수정한 ADR: [os/decisions](../os/decisions/README.md)
+이번 기간에 생성하거나 수정한 ADR: [os/decisions](/os/decisions/README.md)

@@ -16,6 +16,14 @@ AI를 사용하는 사람이 아니라, AI가 일하는 회사를 만든다.
 - 사람은 방향을 정하고 판단한다.
 - AI는 기획·디자인·개발·QA·배포를 실행한다.
 
+### Long-term Scope
+
+```text
+Service → Workflow → Automation → Builder Platform → AI Native Business
+```
+
+지금은 Service와 Workflow 단계다. 다음 단계로의 확장은 TTFU가 실제로 줄어든 뒤에 판단한다.
+
 ## Why
 
 기존 제품 개발은 사람이 기획하고, 디자인하고, 개발하고, QA하는 구조다.

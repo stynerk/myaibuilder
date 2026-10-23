@@ -83,4 +83,4 @@
 
 ## Related
 
-- [Vision](../os/vision.md) · [Playbook](../os/playbook.md) · [Design System](../os/design-system.md)
+- [Vision](/os/vision.md) · [Playbook](/os/playbook.md) · [Design System](/os/design-system.md)

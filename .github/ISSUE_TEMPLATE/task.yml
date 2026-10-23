@@ -1,0 +1,23 @@
+name: "🛠 Task"
+description: 서비스 또는 Builder OS 작업 단위
+labels: ["task"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: ["Service", "Builder OS"]
+    validations:
+      required: true
+  - type: input
+    id: service
+    attributes:
+      label: Service
+      description: "예: homepage-builder (Builder OS 작업이면 비워 둔다)"
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal & 수용 기준
+      description: 무엇이 되면 완료인가?
+    validations:
+      required: true

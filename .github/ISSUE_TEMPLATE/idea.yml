@@ -1,0 +1,27 @@
+name: "💡 Idea"
+description: 새 서비스 아이디어를 Backlog에 등록한다 (Playbook 1. Capture)
+labels: ["idea"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: 누구의 어떤 문제인가? (한두 문장)
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 현재 해결 방법
+      description: 사용자는 지금 이 문제를 어떻게 우회하고 있는가?
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: 어떻게 해결할 수 있을까? AI는 어디에 쓰이는가?
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (초안)
+      options: ["P0", "P1", "P2", "P3"]
+      default: 3

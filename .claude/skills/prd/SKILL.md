@@ -1,6 +1,7 @@
 ---
 name: prd
 description: Write or refine a service PRD using templates/prd.md, working backward from hypotheses and success metrics to the minimal MVP scope. Use when the user asks for a PRD, MVP scope, success metrics, or says /prd <service>.
+argument-hint: "<service-name>"
 ---
 
 # /prd

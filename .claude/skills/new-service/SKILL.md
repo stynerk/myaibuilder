@@ -1,6 +1,7 @@
 ---
 name: new-service
 description: Evaluate a new service idea with the Builder OS 5-criteria scorecard and, if it passes, scaffold services/<name>/ with README, PRD draft, and sprints folder. Use when the user brings a new idea or says "새 서비스", "아이디어 평가", or /new-service.
+argument-hint: "<아이디어 설명 또는 Issue 번호>"
 ---
 
 # /new-service
@@ -24,7 +25,7 @@ description: Evaluate a new service idea with the Builder OS 5-criteria scorecar
 5. **Go 승인 시 Scaffold**:
    - `services/<kebab-name>/README.md`: 아래 형식
    - `services/<kebab-name>/PRD.md`: `templates/prd.md`를 복사하고 Problem 섹션과 가설 초안만 채운다 (Status: Draft)
-   - `services/<kebab-name>/sprints/`: 비워 둔다
+   - `services/<kebab-name>/sprints/.gitkeep`: 빈 폴더를 git에 남기기 위한 빈 파일
 6. 다음 단계로 `/prd`를 안내한다.
 
 ## README 형식
